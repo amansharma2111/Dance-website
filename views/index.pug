@@ -1,0 +1,60 @@
+//- index.pug
+doctype html
+html
+  head
+    title TRX Dance Group
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top 
+        ul 
+          div#logo
+            img(src="/static/logo.png")
+            | TRX
+            li #[a(href= "/") Home ]
+            li #[a(href= "/") About ]
+            li #[a(href= "/") services ]
+            li #[a(href= "/") Class Info ]
+            li #[a(href= "/") Contact us]
+
+    section#introsection 
+        div Welcome To TRX Dance Group
+        div.small Eat Sleep Dance Repeat
+    section#missionSection 
+      h2 Our Missions 
+      div.card
+        h3  Dance Perfection
+        div.card-box
+          div.card-img
+            img(src="/static/img-1.png",)
+
+          div.card-content
+            p This is the best dance group of the university
+      div.card
+        h3  Dance the way you like
+         div.card-box
+          div.card-img
+            img(src="/static/img-2.png",)
+
+          div.card-content
+            p This is the best dance group of the university
+      div.card
+        h3  Expert teaching
+         div.card-box
+          div.card-img
+            img(src="/static/img-3.png",)
+
+          div.card-content
+            p This is the best dance group of the university
+    section#sponsorssection 
+        h2   Our Sponsors
+        div#sponsors
+          img(src="/static/logo1.png", alt="Sponsor Image" class= "SpImage")
+          img(src="/static/logo2.png", alt="Sponsor Image" class= "SpImage")
+          img(src="/static/logo3.png", alt="Sponsor Image" class= "SpImage")
+          img(src="/static/logo4.png", alt="Sponsor Image" class= "SpImage")
+
+
+
+    script
+      include ../static/index.js
